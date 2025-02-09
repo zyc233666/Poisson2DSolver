@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.0)
+project(Poisson2dSolver)
+set(CMAKE_CXX_STANDARD 11)
+set(HOME D:/Poisson2dSolver/OUTPUT_PATH)
+set(EXECUTABLE_OUTPUT_PATH ${HOME})
+include_directories(${PROJECT_SOURCE_DIR}/include)
+file(GLOB SRC_LIST ${CMAKE_CURRENT_SOURCE_DIR}/src/*.cpp)
+add_executable(app  ${SRC_LIST})
